@@ -1,18 +1,13 @@
 package m.f.bbw.Hotel.Repository;
 
 import m.f.bbw.Hotel.Entities.Besitzer;
-import m.f.bbw.Hotel.Entities.Besucher;
 import m.f.bbw.Hotel.Entities.Hotel;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface HotelRepository extends CrudRepository<Hotel, Long> {
-    List<Besucher> findBesucherByHotel(Hotel hotel);
-
-    Optional<Besitzer> findBesitzerByHotel(Hotel hotel);
-
+public interface BesitzerRepository extends CrudRepository<Besitzer, Long> {
+    Optional<Hotel> findHotelByBesitzer(Besitzer besitzer);
 }
