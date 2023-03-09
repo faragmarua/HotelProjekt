@@ -9,5 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface BesitzerRepository extends CrudRepository<Besitzer, Long> {
+
+    //Hotel eines bestimmten Besitzers
     Optional<Hotel> findHotelByBesitzer(Besitzer besitzer);
 }
