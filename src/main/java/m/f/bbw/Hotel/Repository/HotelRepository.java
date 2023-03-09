@@ -23,4 +23,5 @@ public interface HotelRepository extends CrudRepository<Hotel, Long> {
     List<Zimmer> findZimmerByHotel(Hotel hotel);
 
 
+    List<Hotel> findByBesitzer(Besitzer besitzer);
 }

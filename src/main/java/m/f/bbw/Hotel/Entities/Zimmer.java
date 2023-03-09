@@ -32,4 +32,28 @@ public class Zimmer {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public int getNummer() {
+        return nummer;
+    }
+
+    public void setNummer(int nummer) {
+        this.nummer = nummer;
+    }
+
+    public int getStockwerk() {
+        return stockwerk;
+    }
+
+    public void setStockwerk(int stockwerk) {
+        this.stockwerk = stockwerk;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
 }
